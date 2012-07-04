@@ -6,7 +6,7 @@ Gem::Specification.new do |s|
   s.version     = RedmineIRCGateway::VERSION
   s.authors     = ['Tomohiro, TAIRA', 'Naoto, SHINGAKI', 'Yusaku, ONO']
   s.email       = ['tomohiro.t@gmail.com', 'n.shingaki@gmail.com']
-  s.homepage    = 'https://github.com/hackers/redmine_irc_gateway'
+  s.homepage    = 'https://github.com/Tomohiro/redmine_irc_gateway'
   s.summary     = %q{Redmine IRC Gateway}
   s.description = %q{This project provides an access to Redmine API via IRC Gateway.}
 
