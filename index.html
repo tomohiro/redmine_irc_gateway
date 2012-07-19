@@ -1,0 +1,157 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Redmine irc gateway by Tomohiro</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/main.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  </head>
+  <body>
+
+      <header>
+        <h1>Redmine irc gateway</h1>
+        <p>Redmine IRC Gateway - This project provides an access to Redmine API via IRC Gateway. </p>
+      </header>
+
+      <div id="banner">
+        <span id="logo"></span>
+
+        <a href="https://github.com/Tomohiro/redmine_irc_gateway" class="button fork"><strong>View On GitHub</strong></a>
+        <div class="downloads">
+          <span>Downloads:</span>
+          <ul>
+            <li><a href="https://github.com/Tomohiro/redmine_irc_gateway/zipball/master" class="button">ZIP</a></li>
+            <li><a href="https://github.com/Tomohiro/redmine_irc_gateway/tarball/master" class="button">TAR</a></li>
+          </ul>
+        </div>
+      </div><!-- end banner -->
+
+    <div class="wrapper">
+      <nav>
+        <ul></ul>
+      </nav>
+      <section>
+        <p><a href="https://gemnasium.com/Tomohiro/redmine_irc_gateway"><img src="https://gemnasium.com/Tomohiro/redmine_irc_gateway.png" alt="Dependency Status"></a>
+<a href="https://secure.travis-ci.org/Tomohiro/redmine_irc_gateway"><img src="https://secure.travis-ci.org/Tomohiro/redmine_irc_gateway.png" alt="Build Status"></a>
+<a href="https://codeclimate.com/github/Tomohiro/redmine_irc_gateway"><img src="https://codeclimate.com/badge.png" alt="Code Climate"></a></p>
+
+<hr><h2>Overview</h2>
+
+<h3>What's this?</h3>
+
+<p>This project provides an access to Redmine API via IRC Gateway.</p>
+
+<h2>Installation</h2>
+
+<h3>Requirements</h3>
+
+<ul>
+<li>Ruby 1.9.2+</li>
+<li>RubyGems
+
+<ul>
+<li>Rake</li>
+<li>Bundler</li>
+</ul>
+</li>
+</ul><h3>Create development environment</h3>
+
+<ol>
+<li>
+<p>Clone Git repository</p>
+
+<pre><code>$ git clone git@github.com:Tomohiro/redmine_irc_gateway.git
+$ cd redmine_irc_gateway
+</code></pre>
+</li>
+<li>
+<p>Installing RubyGems</p>
+
+<p>Bundler</p>
+
+<pre><code>$ bundle install --path vendor/bundle
+</code></pre>
+</li>
+</ol><h2>How to use</h2>
+
+<h3>Make configuration file</h3>
+
+<p>Rename configuration file</p>
+
+<pre><code>$ mv config/config.yml.example config/config.yml
+</code></pre>
+
+<p>or</p>
+
+<pre><code>$ mkdir ~/.rig
+$ mv config/config.yml.example ~/.rig/config.yml
+</code></pre>
+
+<p>Edit config/config.yml or $HOME/.rig/config.yml. See <code>config/config.yml.example</code>.</p>
+
+<h3>Run</h3>
+
+<h4>Start</h4>
+
+<pre><code>$ bundle exec rig
+</code></pre>
+
+<h4>Debug mode</h4>
+
+<pre><code>$ bundle exec rig --debug
+</code></pre>
+
+<h3>Cleaning environment</h3>
+
+<pre><code>$ rake clean
+</code></pre>
+
+<h2>IRC Channel</h2>
+
+<p><code>#rig</code> at Freenode.net</p>
+
+<h2>Author</h2>
+
+<ul>
+<li>Tomohiro, TAIRA <a href="http://twitter.com/Tomohiro">@Tomohiro</a>
+</li>
+</ul><h2>Contributors</h2>
+
+<ul>
+<li>Naoto, SHINGAKI <a href="http://twitter.com/naotos">@naotos</a>
+</li>
+<li>Yusaku, ONO <a href="http://twitter.com/yono">@yono</a>
+</li>
+</ul><hr><h2>LICENSE</h2>
+
+<p>© 2012 Tomohiro, TAIRA.
+This project is licensed under the MIT license.
+See LICENSE for details.</p>
+      </section>
+      <footer>
+        <p>Project maintained by <a href="https://github.com/Tomohiro">Tomohiro</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="http://twitter.com/#!/michigangraham">mattgraham</a></small></p>
+      </footer>
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><!--<![endif]-->
+              <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-13275958-5");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
+  </body>
+</html>
