@@ -18,10 +18,8 @@ Gem::Specification.new do |s|
   s.require_paths = ['lib']
 
   s.add_development_dependency 'rake'
-  s.add_development_dependency 'watchr'
 
   s.add_runtime_dependency 'net-irc'
   s.add_runtime_dependency 'activeresource'
-  s.add_runtime_dependency 'foreverb'
   s.add_runtime_dependency 'slop'
 end

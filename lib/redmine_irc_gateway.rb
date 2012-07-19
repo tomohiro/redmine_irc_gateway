@@ -24,7 +24,3 @@ module RedmineIRCGateway
   require 'redmine_irc_gateway/server'
 
 end
-
-if __FILE__ == $0
-  RedmineIRCGateway::Server.run!
-end
