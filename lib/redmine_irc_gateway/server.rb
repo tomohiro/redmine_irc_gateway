@@ -15,14 +15,16 @@ module RedmineIRCGateway
       @opts = Slop.parse :help => true do
         banner "Usage: #{$0} [options]"
         on :p, :port,    'Port number to listen',             true,  :as => :integer, :default => 16700
-        on :h, :host,    'Host name or IP address to listen', true,  :as => :string,  :default => nil
-        on :l, :log,     'log file',                          true,  :as => :string,  :default => nil
+        on :s, :server,  'Host name or IP address to listen', true,  :as => :string,  :default => nil
+        on :l, :log,     'Log file',                          true,  :as => :string,  :default => nil
         on :d, :debug,   'Enable debug mode',                 false, :as => :boolean, :default => false
         on :v, :version, 'Print the version' do
           puts VERSION
           exit
         end
       end.to_hash
+
+      exit if @opts[:help]
 
       @opts.each do |key, val|
         puts "#{key}: #{val}" if !val.nil?

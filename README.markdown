@@ -58,36 +58,16 @@ or
 Edit config/config.yml or $HOME/.rig/config.yml. See `config/config.yml.example`.
 
 
-### Run, and stay on top
-
-    $ lib/redmine_irc_gateway.rb
-
-If you want to use debug mode, add the `--debug` option. like this.
-
-    $ lib/redmine_irc_gateway.rb --debug
-
-#### Bundler
-
-    $ bundle exec ruby lib/redmine_irc_gateway.rb
-
-
-### Process daemonize
+### Run
 
 #### Start
 
-    $ bundle exec ./bin/rig start
+    $ bundle exec rig
 
-#### Stop
+#### Debug mode
 
-    $ bundle exec ./bin/rig stop
+    $ bundle exec rig --debug
 
-#### Restart
-
-    $ bundle exec ./bin/rig restart
-
-#### Kill
-
-    $ bundle exec ./bin/rig kill
 
 ### Cleaning environment
 
